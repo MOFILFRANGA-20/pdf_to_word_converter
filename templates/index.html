@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>PDF to Image Converter</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 min-h-screen flex items-center justify-center">
+  <form action="/convert" method="POST" enctype="multipart/form-data" class="bg-white p-8 rounded-lg shadow-md">
+    <h1 class="text-xl font-bold mb-4">Upload PDF to Convert to Image</h1>
+    <input type="file" name="pdf" accept=".pdf" class="mb-4" required>
+    <button type="submit" class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600">Convert</button>
+  </form>
+</body>
+</html>
